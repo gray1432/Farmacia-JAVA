@@ -55,6 +55,10 @@ public class Proveedor {
         this.direccion = direccion;
     }
 
+    public int compareTo(Proveedor proveedor) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     
     
     

@@ -183,7 +183,23 @@ public class ProveedorDAO implements ProveedorInterface{
                 }
             }
         }
-    }   
+    }
+    
+    public boolean existeProveedor(String nombreProveedor) {
+        try {
+            String sql = "SELECT * FROM proveedor WHERE nombreProv = ?";
+            conn = con.getConectar();
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, nombreProveedor);
+            rs = ps.executeQuery();
+            return rs.next(); // Devuelve true si existe un proveedor con el nombre proporcionado
+        } catch (SQLException ex) {
+            Logger.getLogger(ProveedorDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            // Cerrar conexiones y recursos aquí si es necesario
+        }
+        return false; // Devuelve false en caso de error o si no existe el proveedor
+    }
   
 }
 
