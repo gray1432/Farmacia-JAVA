@@ -94,5 +94,13 @@ public class Nodo {
     public void setNumTelf(String numTelf) {
         this.numTelf = numTelf;
     }
+
+    public Nodo getEnlace() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setEnlace(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 
